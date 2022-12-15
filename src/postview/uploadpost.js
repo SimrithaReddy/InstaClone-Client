@@ -1,4 +1,3 @@
-
 import { useNavigate } from "react-router-dom"
 import Header from "./header";
 import "./upload.css";
@@ -17,9 +16,7 @@ const PostUpload = () => {
         body: formData
       })
       .then(res => res.json()).then((d) => {
-        console.log(formData);
         alert("post successful")
-        console.log(d);
       }).catch((e) => { console.log(e.message) })
       .finally(() => {
         navigate("/InstaClone")
@@ -33,7 +30,7 @@ const PostUpload = () => {
       <div className="upload-container">
         <form onSubmit={(e)=>handleSubmit(e)}>
           <section>
-            <input type="file"  placeholder="file" id="post" name="PostImage"></input>
+            <input type="file" required  placeholder="file" id="post" name="PostImage"></input>
           </section>
 
           <section>
