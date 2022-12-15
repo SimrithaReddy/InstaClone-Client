@@ -3,6 +3,12 @@ import "./style.css"
 
 const CardInstaClone = (props) => {
     const { rec } = props
+    const { m } = props
+    const data = ['Jan', 'Feb', 'Mar',
+        'Apr', 'May', 'Jun', 'Jul', 'Aug',
+        'Sept', 'Oct', 'Nov', 'Dec']
+
+    const month = data[m - 1]
    
 
     return (
@@ -21,7 +27,7 @@ const CardInstaClone = (props) => {
                 <div className="icon">
                     <img src="https://cdn-icons-png.flaticon.com/128/8184/8184268.png" alt="image1" className="icon-img" height="36px"></img>
                     <img src="https://as2.ftcdn.net/v2/jpg/02/74/64/11/1000_F_274641162_RIC3HZnzMRILg62eQj2gfUs3xNa7Prxh.jpg" alt="image2" height="38px" className="icon-img"></img>
-
+                    <span className="icon-date">{`${props.rec.date.split("/")[1]} ${month} ${props.rec.date.split("/")[2]}`}</span>
                   
                 </div>
                 <section className="likes">{`${rec.likes} likes`}</section>
