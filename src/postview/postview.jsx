@@ -31,7 +31,7 @@ const  InstaClone =()=> {
         {
           userData.map((rec, i) => {
             return (
-              <CardInstaClone key={i} rec={rec}  ></CardInstaClone>
+              <CardInstaClone key={i} rec={rec} m={parseInt(rec.date.split("/")[0])}></CardInstaClone>
             )
           })
         }
