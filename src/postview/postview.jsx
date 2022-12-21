@@ -15,7 +15,6 @@ const  InstaClone =()=> {
                 return response.json();
             })
             .then(function (myJson) {
-              myJson.reverse()
               updateUserData(myJson)
               console.log(userData)
             });
