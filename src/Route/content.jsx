@@ -10,9 +10,9 @@ const RoutePage = ()=>{
         <>
         <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Landingpage></Landingpage>}></Route>
+{/*             <Route path="/" element={<Landingpage></Landingpage>}></Route> */}
             <Route path="/uploads" element={<PostUpload></PostUpload>}></Route>
-            <Route path="/instaclone" element={<InstaClone></InstaClone>}></Route>
+            <Route path="/" element={<InstaClone></InstaClone>}></Route>
         </Routes>
         </BrowserRouter>
         </>
