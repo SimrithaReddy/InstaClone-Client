@@ -19,7 +19,7 @@ const PostUpload = () => {
         alert("post successful")
       }).catch((e) => { console.log(e.message) })
       .finally(() => {
-        navigate("/InstaClone")
+        navigate("/")
       })
   }
 
